@@ -8,10 +8,11 @@
     font-family: 'Poppins', 'sans-serif';
 }
 
+/* header */
 header{
     height: 100vh;
     width: 300px;
-    padding: 15px 30px;
+    padding: 12px 30px;
     background-color: rgb(59, 89, 155);
     overflow-y: auto;
     position: fixed;
@@ -24,11 +25,72 @@ header{
 
 header .profile{
     text-align: center;
-    margin: 10px 0;
+    margin: 5px 0;
 }
 
 header .profile img{
     width: 150px;
     border-radius: 50%;
-    border: 10px solid black;
+    border: 8px solid black;
+}
+
+header .profile h1{
+    color: white;
+    font-weight: 600;
+    line-height: 1;
+}
+header .socialIcons{
+    padding-top: 10px;
+}
+
+header .profile .socialIcons a{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 37px;
+    background-color: blanchedalmond;
+    color: rgb(15, 17, 37);
+    font-size: 18px;
+    margin: 1.5px;
+    transition: 0.4s;
+}
+
+header .profile .socialIcons a:hover{
+    background-color: rgb(166, 236, 119);
+}
+/* header nav part */
+header nav{
+    margin-top: 5px;
+}
+
+header nav ul{
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 10px;
+    margin: 7px 0;
+    color: white;
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 0.6px;
+}
+
+header nav ul li a i{
+    margin-right: 10px;
+    font-size: 20px;
+    transition: 0.4s;
+}
+
+header nav ul li a:hover i{
+    color: aquamarine;
+}
+
+header nav ul li .active i{
+    color: aquamarine;
 }
