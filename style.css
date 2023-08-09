@@ -60,6 +60,8 @@ header .profile .socialIcons a{
 header .profile .socialIcons a:hover{
     background-color: rgb(166, 236, 119);
 }
+
+
 /* header nav part */
 header nav{
     margin-top: 5px;
@@ -93,4 +95,37 @@ header nav ul li a:hover i{
 
 header nav ul li .active i{
     color: aquamarine;
+}
+
+/* nav toggle for mobile */
+#MenuBtn{
+    position: fixed;
+    top: 25px;
+    right: 25px;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    color: white;
+    background-color: rgb(90, 87, 243);
+    text-align: center;
+    line-height: 42px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 20%);
+    display: none;
+    z-index: 999;
+}
+
+/* mobile view nav */
+@media only screen and (max-width: 1050px){
+    header{
+        left: -300px;
+    }
+
+    #MenuBtn{
+        display: block;
+    }
+}
+
+.mobile-nav-active header{
+    left: 0;
 }
