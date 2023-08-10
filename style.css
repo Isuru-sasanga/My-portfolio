@@ -115,7 +115,7 @@ header nav ul li .active i{
     z-index: 999;
 }
 
-/* mobile view nav */
+/* responsive view nav */
 @media only screen and (max-width: 1050px){
     header{
         left: -300px;
@@ -129,3 +129,94 @@ header nav ul li .active i{
 .mobile-nav-active header{
     left: 0;
 }
+
+
+/* home */
+
+main{
+    margin-left: 300px;
+    transition: 0.3s;
+    background-color: rgb(225, 235, 235);
+}
+
+/* responsive view home */
+@media only screen and (max-width: 1050px) {
+    main{
+        margin-left: 0;
+    }
+}
+
+#home{
+    height: 100vh;
+    width: 100%;
+    background-image: url(img/pro2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 70px;
+    position: relative;
+}
+
+/* ovrlay */
+#home ::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(41, 41, 41, 0.096);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#home .homeRow{
+    z-index: 1;
+}
+
+#home .homeRow h1{
+    font-size: 58px;
+    color: rgb(12, 12, 12);
+    font-weight: 600;
+    letter-spacing: -1px;
+    margin-bottom: 10px;
+    line-height: 70px;
+}
+
+#home .homeRow h1 span{
+    color: rgb(44, 47, 233);
+}
+
+#home .homeRow p{
+    color: rgb(153, 157, 160);
+    font-size: 35px;
+    font-weight: 500;
+} 
+
+#home .homeRow p span{
+    border-bottom: 4px solid rgb(48, 247, 107);
+}
+
+/* mobile view home */
+@media only screen and (max-width: 760px){
+    #home{
+        padding: 60px;
+    }
+    #home .homeRow h1{
+        font-size: 40px;
+        font-weight: 600;
+        letter-spacing: 0;
+        line-height: 50px;
+    }
+
+    #home .homeRow h1 br{
+        display: none;
+    }
+
+    #home .homeRow p{
+        color: rgb(153, 157, 160);
+        font-size: 20px;
+        font-weight: 500;
+    }
+}
+
