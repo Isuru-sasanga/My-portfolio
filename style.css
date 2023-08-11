@@ -314,7 +314,7 @@ main{
 
 /* education */
 #education{
-    padding: 30px 20px;
+    padding: 30px 30px;
 }
 
 #education .buttons{
@@ -371,4 +371,46 @@ main{
     height: 100%;
     border-radius: 15px;
     background-color: #0026ff;
+}
+
+/* mobile view for education */
+@media only screen and (max-width: 770px){
+    .level-bar {
+        width: 300px;
+    }
+    #education{
+        padding: 30px 20px;
+    }
+    
+}
+
+@media only screen and (max-width: 550px){
+    .level-bar {
+        width: 220px;
+    }
+
+    #education .buttons .content1,
+    #education .buttons .content2 {
+        font-size: 14px;
+    }
+
+    #education .buttons .toggleBut1, .toggleBut2{
+        margin-top: 25px;
+        padding: 3px 0;
+        font-weight: 500;
+    }
+
+    #education .buttons .content1 ul li{
+        margin-top: 20px;
+    }
+    #education .buttons .content2 ul li{
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+
+}
+
+/* projects */
+#projects{
+    padding: 40px 30px;
 }
